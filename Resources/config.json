@@ -1,0 +1,1333 @@
+{
+  "activeLibrary" : "IELTSluan_2",
+  "libraries" : [
+    {
+      "title" : "四级真题核心词（image_url记忆）",
+      "id" : "CET4luan_1",
+      "recitation_count" : 875260,
+      "word_count" : 1162,
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1523620217431_CET4luan_1.zip",
+        "download_local" : "~\/.flashcard\/libs\/1523620217431_CET4luan_1.zip"
+      },
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/1496632727200CET4luan_1.jpg",
+      "file_size" : 788457,
+      "tags" : [
+        "四级",
+        "有道"
+      ],
+      "index" : 1
+    },
+    {
+      "tags" : [
+        "六级",
+        "有道"
+      ],
+      "title" : "六级真题核心词（image_url记忆）",
+      "word_count" : 1228,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/1496655382926CET6luan_1.jpg",
+      "download_urls" : {
+        "download_local" : "book\/1521164660466_CET6luan_1.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164660466_CET6luan_1.zip"
+      },
+      "index" : 2,
+      "id" : "CET6luan_1",
+      "file_size" : 591417,
+      "recitation_count" : 218418
+    },
+    {
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/1496632762670KaoYanluan_1.jpg",
+      "download_urls" : {
+        "download_local" : "book\/1521164661106_KaoYanluan_1.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164661106_KaoYanluan_1.zip"
+      },
+      "id" : "KaoYanluan_1",
+      "file_size" : 771889,
+      "tags" : [
+        "考研",
+        "有道"
+      ],
+      "recitation_count" : 252505,
+      "title" : "考研必考词汇",
+      "word_count" : 1341,
+      "index" : 3
+    },
+    {
+      "id" : "Level4luan_1",
+      "tags" : [
+        "专四",
+        "有道"
+      ],
+      "file_size" : 269844,
+      "recitation_count" : 62169,
+      "index" : 4,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/1496632776935Level4luan_1.jpg",
+      "title" : "专四真题高频词",
+      "word_count" : 595,
+      "download_urls" : {
+        "download_local" : "book\/1521164630387_Level4luan_1.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164630387_Level4luan_1.zip"
+      }
+    },
+    {
+      "index" : 5,
+      "word_count" : 684,
+      "file_size" : 242255,
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164635290_Level8_1.zip",
+        "download_local" : "book\/1521164635290_Level8_1.zip"
+      },
+      "tags" : [
+        "专八",
+        "有道"
+      ],
+      "id" : "Level8_1",
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/1491037703359Level8_1.jpg",
+      "title" : "专八真题高频词",
+      "recitation_count" : 30059
+    },
+    {
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1524052539052_CET4luan_2.zip",
+        "download_local" : "book\/1524052539052_CET4luan_2.zip"
+      },
+      "index" : 6,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_CET4_2.jpg",
+      "id" : "CET4luan_2",
+      "word_count" : 3739,
+      "recitation_count" : 215979,
+      "file_size" : 2723074,
+      "title" : "四级英语词汇",
+      "tags" : [
+        "四级",
+        "有道"
+      ]
+    },
+    {
+      "recitation_count" : 64093,
+      "word_count" : 2078,
+      "title" : "六级英语词汇",
+      "file_size" : 1111633,
+      "tags" : [
+        "六级",
+        "有道"
+      ],
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_CET6_2.jpg",
+      "id" : "CET6_2",
+      "download_urls" : {
+        "download_local" : "book\/1524052554766_CET6_2.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1524052554766_CET6_2.zip"
+      },
+      "index" : 7
+    },
+    {
+      "tags" : [
+        "考研",
+        "有道"
+      ],
+      "file_size" : 2431155,
+      "id" : "KaoYan_2",
+      "recitation_count" : 147205,
+      "word_count" : 4533,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_KaoYan_2.jpg",
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164654696_KaoYan_2.zip",
+        "download_local" : "book\/1521164654696_KaoYan_2.zip"
+      },
+      "index" : 8,
+      "title" : "考研英语词汇"
+    },
+    {
+      "file_size" : 1783295,
+      "word_count" : 4025,
+      "tags" : [
+        "专四",
+        "有道"
+      ],
+      "recitation_count" : 18858,
+      "title" : "专四核心词汇",
+      "download_urls" : {
+        "download_local" : "book\/1521164625401_Level4luan_2.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164625401_Level4luan_2.zip"
+      },
+      "id" : "Level4luan_2",
+      "index" : 9,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_Level4_2.jpg"
+    },
+    {
+      "tags" : [
+        "专八",
+        "有道"
+      ],
+      "recitation_count" : 23123,
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164650006_Level8luan_2.zip",
+        "download_local" : "book\/1521164650006_Level8luan_2.zip"
+      },
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_Level8_2.jpg",
+      "id" : "Level8luan_2",
+      "title" : "专八核心词汇",
+      "word_count" : 12197,
+      "file_size" : 5320395,
+      "index" : 10
+    },
+    {
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164643060_CET4_3.zip",
+        "download_local" : "book\/1521164643060_CET4_3.zip"
+      },
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/newOriental_CET4_3.jpg",
+      "title" : "新东方四级词汇",
+      "tags" : [
+        "四级",
+        "新东方"
+      ],
+      "file_size" : 1719305,
+      "word_count" : 2607,
+      "index" : 11,
+      "id" : "CET4_3",
+      "recitation_count" : 3063
+    },
+    {
+      "id" : "CET6_3",
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164633851_CET6_3.zip",
+        "download_local" : "book\/1521164633851_CET6_3.zip"
+      },
+      "file_size" : 1452645,
+      "index" : 12,
+      "tags" : [
+        "六级",
+        "新东方"
+      ],
+      "word_count" : 2345,
+      "title" : "新东方六级词汇",
+      "recitation_count" : 1193,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/newOriental_CET6_3.jpg"
+    },
+    {
+      "id" : "KaoYan_3",
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164658897_KaoYan_3.zip",
+        "download_local" : "book\/1521164658897_KaoYan_3.zip"
+      },
+      "tags" : [
+        "考研",
+        "新东方"
+      ],
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/newOriental_KaoYan_3.jpg",
+      "title" : "新东方考研词汇",
+      "recitation_count" : 2644,
+      "word_count" : 3728,
+      "file_size" : 1838572,
+      "index" : 13
+    },
+    {
+      "id" : "CET4_1",
+      "file_size" : 764018,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/1491037568440CET4_1.jpg",
+      "download_urls" : {
+        "download_local" : "book\/1521164649209_CET4_1.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164649209_CET4_1.zip"
+      },
+      "tags" : [
+        "有道"
+      ],
+      "title" : "四级真题核心词（正序版）",
+      "word_count" : 1162,
+      "recitation_count" : 6324,
+      "index" : 14
+    },
+    {
+      "index" : 15,
+      "file_size" : 753196,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/1491037677590CET6_1.jpg",
+      "word_count" : 1228,
+      "id" : "CET6_1",
+      "recitation_count" : 3888,
+      "download_urls" : {
+        "download_local" : "book\/1521164668667_CET6_1.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164668667_CET6_1.zip"
+      },
+      "title" : "六级真题核心词（正序版）",
+      "tags" : [
+        "六级",
+        "有道"
+      ]
+    },
+    {
+      "file_size" : 685507,
+      "title" : "考研必考词汇（正序版）",
+      "index" : 16,
+      "recitation_count" : 7621,
+      "id" : "KaoYan_1",
+      "word_count" : 1341,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/1491037662208KaoYan_1.jpg",
+      "tags" : [
+        "考研",
+        "有道"
+      ],
+      "download_urls" : {
+        "download_local" : "book\/1521164669833_KaoYan_1.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164669833_KaoYan_1.zip"
+      }
+    },
+    {
+      "file_size" : 267335,
+      "index" : 17,
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164647417_Level4_1.zip",
+        "download_local" : "book\/1521164647417_Level4_1.zip"
+      },
+      "tags" : [
+        "专四",
+        "有道"
+      ],
+      "title" : "专四真题高频词（正序版）",
+      "id" : "Level4_1",
+      "word_count" : 595,
+      "recitation_count" : 2698,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/1491037690141Level4_1.jpg"
+    },
+    {
+      "recitation_count" : 11803,
+      "index" : 18,
+      "id" : "CET4_2",
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_CET4_2.jpg",
+      "word_count" : 3739,
+      "file_size" : 2542778,
+      "tags" : [
+        "四级",
+        "有道"
+      ],
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164635506_CET4_2.zip",
+        "download_local" : "book\/1521164635506_CET4_2.zip"
+      },
+      "title" : "四级英语词汇（正序版）"
+    },
+    {
+      "tags" : [
+        "专四",
+        "有道"
+      ],
+      "download_urls" : {
+        "download_local" : "book\/1521164653685_Level4_2.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164653685_Level4_2.zip"
+      },
+      "index" : 19,
+      "word_count" : 4025,
+      "title" : "专四核心词汇（正序版）",
+      "recitation_count" : 4700,
+      "id" : "Level4_2",
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_Level4_2.jpg",
+      "file_size" : 1706442
+    },
+    {
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_Level8_2.jpg",
+      "download_urls" : {
+        "download_local" : "book\/1521164663794_Level8_2.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164663794_Level8_2.zip"
+      },
+      "title" : "专八核心词汇（正序版）",
+      "tags" : [
+        "专八",
+        "有道"
+      ],
+      "word_count" : 12197,
+      "id" : "Level8_2",
+      "index" : 20,
+      "recitation_count" : 8040,
+      "file_size" : 4763514
+    },
+    {
+      "id" : "IELTSluan_2",
+      "tags" : [
+        "IELTS",
+        "有道"
+      ],
+      "file_size" : 1597545,
+      "index" : 21,
+      "recitation_count" : 276495,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_IELTS_2.jpg",
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164624473_IELTSluan_2.zip",
+        "download_local" : "book\/1521164624473_IELTSluan_2.zip"
+      },
+      "title" : "雅思词汇",
+      "word_count" : 3427
+    },
+    {
+      "id" : "TOEFL_2",
+      "index" : 22,
+      "file_size" : 4327321,
+      "title" : "TOEFL 词汇",
+      "tags" : [
+        "TOEFL",
+        "有道"
+      ],
+      "recitation_count" : 118896,
+      "download_urls" : {
+        "download_local" : "book\/1521164640451_TOEFL_2.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164640451_TOEFL_2.zip"
+      },
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_TOEFL_2.jpg",
+      "word_count" : 9213
+    },
+    {
+      "file_size" : 2470882,
+      "tags" : [
+        "GRE",
+        "有道"
+      ],
+      "recitation_count" : 47072,
+      "index" : 23,
+      "title" : "GRE 词汇",
+      "word_count" : 7199,
+      "download_urls" : {
+        "download_local" : "book\/1521164637271_GRE_2.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164637271_GRE_2.zip"
+      },
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_GRE_2.jpg",
+      "id" : "GRE_2"
+    },
+    {
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_SAT_2.jpg",
+      "recitation_count" : 13876,
+      "file_size" : 1784650,
+      "id" : "SAT_2",
+      "download_urls" : {
+        "download_local" : "book\/1521164670910_SAT_2.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164670910_SAT_2.zip"
+      },
+      "tags" : [
+        "SAT",
+        "有道"
+      ],
+      "word_count" : 4423,
+      "index" : 24,
+      "title" : "SAT 词汇"
+    },
+    {
+      "word_count" : 3254,
+      "index" : 25,
+      "download_urls" : {
+        "download_local" : "book\/1521164629611_GMATluan_2.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164629611_GMATluan_2.zip"
+      },
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_GMAT_2.jpg",
+      "file_size" : 1509190,
+      "tags" : [
+        "GMAT",
+        "有道"
+      ],
+      "title" : "GMAT 词汇",
+      "id" : "GMATluan_2",
+      "recitation_count" : 14874
+    },
+    {
+      "word_count" : 3575,
+      "file_size" : 1729987,
+      "title" : "新东方雅思词汇",
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164666922_IELTS_3.zip",
+        "download_local" : "book\/1521164666922_IELTS_3.zip"
+      },
+      "recitation_count" : 1707,
+      "id" : "IELTS_3",
+      "index" : 26,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/newOriental_IELTS_3.jpg",
+      "tags" : [
+        "IELTS",
+        "新东方"
+      ]
+    },
+    {
+      "id" : "TOEFL_3",
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/newOriental_TOEFL_3.jpg",
+      "recitation_count" : 1294,
+      "title" : "新东方 TOEFL 词汇",
+      "index" : 27,
+      "word_count" : 4264,
+      "file_size" : 2015157,
+      "download_urls" : {
+        "download_local" : "book\/1521164667985_TOEFL_3.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164667985_TOEFL_3.zip"
+      },
+      "tags" : [
+        "TOEFL",
+        "新东方"
+      ]
+    },
+    {
+      "file_size" : 2319121,
+      "index" : 28,
+      "title" : "新东方 GRE 词汇",
+      "tags" : [
+        "GRE",
+        "新东方"
+      ],
+      "id" : "GRE_3",
+      "recitation_count" : 673,
+      "word_count" : 6515,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/newOriental_GRE_3.jpg",
+      "download_urls" : {
+        "download_local" : "book\/1521164677706_GRE_3.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164677706_GRE_3.zip"
+      }
+    },
+    {
+      "index" : 29,
+      "file_size" : 1759354,
+      "title" : "新东方 SAT 词汇",
+      "tags" : [
+        "SAT",
+        "新东方"
+      ],
+      "id" : "SAT_3",
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/newOriental_SAT_3.jpg",
+      "word_count" : 4464,
+      "recitation_count" : 292,
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164636496_SAT_3.zip",
+        "download_local" : "book\/1521164636496_SAT_3.zip"
+      }
+    },
+    {
+      "tags" : [
+        "GMAT",
+        "新东方"
+      ],
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/newOriental_GMAT_3.jpg",
+      "recitation_count" : 333,
+      "download_urls" : {
+        "download_local" : "book\/1521164672691_GMAT_3.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164672691_GMAT_3.zip"
+      },
+      "index" : 30,
+      "word_count" : 3047,
+      "id" : "GMAT_3",
+      "file_size" : 1365145,
+      "title" : "新东方 GMAT 词汇"
+    },
+    {
+      "index" : 31,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_IELTS_2.jpg",
+      "title" : "雅思词汇（正序版）",
+      "id" : "IELTS_2",
+      "file_size" : 1525677,
+      "tags" : [
+        "IELTS",
+        "有道"
+      ],
+      "word_count" : 3427,
+      "recitation_count" : 6286,
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164657744_IELTS_2.zip",
+        "download_local" : "book\/1521164657744_IELTS_2.zip"
+      }
+    },
+    {
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_GMAT_2.jpg",
+      "id" : "GMAT_2",
+      "file_size" : 1422468,
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164662073_GMAT_2.zip",
+        "download_local" : "book\/1521164662073_GMAT_2.zip"
+      },
+      "index" : 32,
+      "word_count" : 3254,
+      "title" : "GMAT 词汇（正序版）",
+      "tags" : [
+        "GMAT",
+        "有道"
+      ],
+      "recitation_count" : 2064
+    },
+    {
+      "index" : 33,
+      "recitation_count" : 273321,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_ChuZhong_2.jpg",
+      "tags" : [
+        "有道"
+      ],
+      "title" : "中考必备词汇",
+      "id" : "ChuZhongluan_2",
+      "file_size" : 940509,
+      "word_count" : 1420,
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164669076_ChuZhongluan_2.zip",
+        "download_local" : "book\/1521164669076_ChuZhongluan_2.zip"
+      }
+    },
+    {
+      "id" : "GaoZhongluan_2",
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164673602_GaoZhongluan_2.zip",
+        "download_local" : "book\/1521164673602_GaoZhongluan_2.zip"
+      },
+      "index" : 34,
+      "file_size" : 2120036,
+      "word_count" : 3668,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_GaoZhong_2.jpg",
+      "title" : "高考必备词汇（image_url记忆）",
+      "tags" : [
+        "有道"
+      ],
+      "recitation_count" : 256873
+    },
+    {
+      "title" : "新东方初中词汇",
+      "word_count" : 1803,
+      "index" : 35,
+      "file_size" : 1149674,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/newOriental_ChuZhong_3.jpg",
+      "recitation_count" : 5117,
+      "tags" : [
+        "新东方"
+      ],
+      "id" : "ChuZhong_3",
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164652700_ChuZhong_3.zip",
+        "download_local" : "book\/1521164652700_ChuZhong_3.zip"
+      }
+    },
+    {
+      "tags" : [
+        "新东方"
+      ],
+      "recitation_count" : 2619,
+      "download_urls" : {
+        "download_local" : "book\/1521164679263_GaoZhong_3.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164679263_GaoZhong_3.zip"
+      },
+      "file_size" : 1346745,
+      "title" : "新东方高中词汇",
+      "word_count" : 2340,
+      "id" : "GaoZhong_3",
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/newOriental_GaoZhong_3.jpg",
+      "index" : 36
+    },
+    {
+      "word_count" : 64,
+      "id" : "PEPXiaoXue3_1",
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/2_youdao_PEPXiaoXue3_1.jpg",
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164661774_PEPXiaoXue3_1.zip",
+        "download_local" : "book\/1521164661774_PEPXiaoXue3_1.zip"
+      },
+      "index" : 37,
+      "tags" : [
+        "人教版"
+      ],
+      "file_size" : 42478,
+      "title" : "人教版小学英语-三年级上册",
+      "recitation_count" : 378234
+    },
+    {
+      "tags" : [
+        "人教版"
+      ],
+      "index" : 38,
+      "word_count" : 72,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/2_youdao_PEPXiaoXue3_2.jpg",
+      "file_size" : 40675,
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164656604_PEPXiaoXue3_2.zip",
+        "download_local" : "book\/1521164656604_PEPXiaoXue3_2.zip"
+      },
+      "recitation_count" : 103262,
+      "title" : "人教版小学英语-三年级下册",
+      "id" : "PEPXiaoXue3_2"
+    },
+    {
+      "id" : "PEPXiaoXue4_1",
+      "word_count" : 84,
+      "tags" : [
+        "人教版"
+      ],
+      "recitation_count" : 89159,
+      "download_urls" : {
+        "download_local" : "book\/1521164677447_PEPXiaoXue4_1.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164677447_PEPXiaoXue4_1.zip"
+      },
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/2_youdao_PEPXiaoXue4_1.jpg",
+      "file_size" : 47587,
+      "title" : "人教版小学英语-四年级上册",
+      "index" : 39
+    },
+    {
+      "recitation_count" : 50627,
+      "word_count" : 104,
+      "index" : 40,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/2_youdao_PEPXiaoXue4_2.jpg",
+      "tags" : [
+        "人教版"
+      ],
+      "id" : "PEPXiaoXue4_2",
+      "title" : "人教版小学英语-四年级下册",
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164663086_PEPXiaoXue4_2.zip",
+        "download_local" : "book\/1521164663086_PEPXiaoXue4_2.zip"
+      },
+      "file_size" : 53505
+    },
+    {
+      "index" : 41,
+      "download_urls" : {
+        "download_local" : "book\/1530101080610_PEPXiaoXue5_1.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1530101080610_PEPXiaoXue5_1.zip"
+      },
+      "tags" : [
+        "人教版"
+      ],
+      "id" : "PEPXiaoXue5_1",
+      "title" : "人教版小学英语-五年级上册",
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/2_youdao_PEPXiaoXue5_1.jpg",
+      "file_size" : 71424,
+      "recitation_count" : 65368,
+      "word_count" : 131
+    },
+    {
+      "download_urls" : {
+        "download_local" : "book\/1530101073491_PEPXiaoXue5_2.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1530101073491_PEPXiaoXue5_2.zip"
+      },
+      "title" : "人教版小学英语-五年级下册",
+      "recitation_count" : 37829,
+      "index" : 42,
+      "word_count" : 156,
+      "tags" : [
+        "人教版"
+      ],
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/2_youdao_PEPXiaoXue5_2.jpg",
+      "id" : "PEPXiaoXue5_2",
+      "file_size" : 87211
+    },
+    {
+      "index" : 43,
+      "word_count" : 130,
+      "title" : "人教版小学英语-六年级上册",
+      "id" : "PEPXiaoXue6_1",
+      "file_size" : 76633,
+      "recitation_count" : 69570,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/2_youdao_PEPXiaoXue6_1.jpg",
+      "tags" : [
+        "人教版"
+      ],
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1530101075331_PEPXiaoXue6_1.zip",
+        "download_local" : "book\/1530101075331_PEPXiaoXue6_1.zip"
+      }
+    },
+    {
+      "index" : 44,
+      "title" : "人教版小学英语-六年级下册",
+      "id" : "PEPXiaoXue6_2",
+      "file_size" : 64879,
+      "word_count" : 108,
+      "tags" : [
+        "人教版"
+      ],
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/2_youdao_PEPXiaoXue6_2.jpg",
+      "recitation_count" : 38501,
+      "download_urls" : {
+        "download_local" : "book\/1521164632445_PEPXiaoXue6_2.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164632445_PEPXiaoXue6_2.zip"
+      }
+    },
+    {
+      "file_size" : 203341,
+      "index" : 45,
+      "title" : "人教版初中英语-七年级上册",
+      "word_count" : 392,
+      "tags" : [
+        "人教版"
+      ],
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1530101067588_PEPChuZhong7_1.zip",
+        "download_local" : "book\/1530101067588_PEPChuZhong7_1.zip"
+      },
+      "recitation_count" : 126509,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/3_youdao_PEPChuZhong7_1.jpg",
+      "id" : "PEPChuZhong7_1"
+    },
+    {
+      "id" : "PEPChuZhong7_2",
+      "recitation_count" : 40795,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/3_youdao_PEPChuZhong7_2.jpg",
+      "file_size" : 266712,
+      "tags" : [
+        "人教版"
+      ],
+      "title" : "人教版初中英语-七年级下册",
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164677043_PEPChuZhong7_2.zip",
+        "download_local" : "book\/1521164677043_PEPChuZhong7_2.zip"
+      },
+      "word_count" : 492,
+      "index" : 46
+    },
+    {
+      "title" : "人教版初中英语-八年级上册",
+      "id" : "PEPChuZhong8_1",
+      "index" : 47,
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1530101070747_PEPChuZhong8_1.zip",
+        "download_local" : "book\/1530101070747_PEPChuZhong8_1.zip"
+      },
+      "word_count" : 419,
+      "file_size" : 222704,
+      "tags" : [
+        "人教版"
+      ],
+      "recitation_count" : 69006,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/3_youdao_PEPChuZhong8_1.jpg"
+    },
+    {
+      "file_size" : 244325,
+      "download_urls" : {
+        "download_local" : "book\/1521164666522_PEPChuZhong8_2.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164666522_PEPChuZhong8_2.zip"
+      },
+      "recitation_count" : 31355,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/3_youdao_PEPChuZhong8_2.jpg",
+      "id" : "PEPChuZhong8_2",
+      "index" : 48,
+      "title" : "人教版初中英语-八年级下册",
+      "word_count" : 466,
+      "tags" : [
+        "人教版"
+      ]
+    },
+    {
+      "file_size" : 278981,
+      "tags" : [
+        "人教版"
+      ],
+      "id" : "PEPChuZhong9_1",
+      "title" : "人教版初中英语-九年级全册",
+      "recitation_count" : 69649,
+      "download_urls" : {
+        "download_local" : "book\/1530101078234_PEPChuZhong9_1.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1530101078234_PEPChuZhong9_1.zip"
+      },
+      "index" : 49,
+      "word_count" : 551,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/3_youdao_PEPChuZhong9_1.jpg"
+    },
+    {
+      "index" : 50,
+      "id" : "WaiYanSheChuZhong_1",
+      "file_size" : 351737,
+      "download_urls" : {
+        "download_local" : "book\/reciteWord_1545032533243_WaiYanSheChuZhong_1.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/reciteWord_1545032533243_WaiYanSheChuZhong_1.zip"
+      },
+      "tags" : [
+        "外研社版"
+      ],
+      "title" : "外研社版初中英语-七年级上册",
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/reciteWord_1545032535025_WaiYanSheChuZhong_1.png",
+      "recitation_count" : 1031,
+      "word_count" : 629
+    },
+    {
+      "recitation_count" : 693,
+      "id" : "WaiYanSheChuZhong_2",
+      "download_urls" : {
+        "download_local" : "book\/reciteWord_1545032493536_WaiYanSheChuZhong_2.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/reciteWord_1545032493536_WaiYanSheChuZhong_2.zip"
+      },
+      "title" : "外研社版初中英语-七年级下册",
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/reciteWord_1545032535434_WaiYanSheChuZhong_2.png",
+      "word_count" : 438,
+      "index" : 51,
+      "file_size" : 247606,
+      "tags" : [
+        "外研社版"
+      ]
+    },
+    {
+      "recitation_count" : 552,
+      "title" : "外研社版初中英语-八年级上册",
+      "index" : 52,
+      "file_size" : 184306,
+      "word_count" : 320,
+      "download_urls" : {
+        "download_local" : "book\/reciteWord_1545032532744_WaiYanSheChuZhong_3.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/reciteWord_1545032532744_WaiYanSheChuZhong_3.zip"
+      },
+      "id" : "WaiYanSheChuZhong_3",
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/reciteWord_1545032535509_WaiYanSheChuZhong_3.png",
+      "tags" : [
+        "外研社版"
+      ]
+    },
+    {
+      "recitation_count" : 629,
+      "index" : 53,
+      "word_count" : 266,
+      "tags" : [
+        "外研社版"
+      ],
+      "download_urls" : {
+        "download_local" : "book\/reciteWord_1545032533455_WaiYanSheChuZhong_4.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/reciteWord_1545032533455_WaiYanSheChuZhong_4.zip"
+      },
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/reciteWord_1545032534561_WaiYanSheChuZhong_4.png",
+      "id" : "WaiYanSheChuZhong_4",
+      "file_size" : 147166,
+      "title" : "外研社版初中英语-八年级下册"
+    },
+    {
+      "file_size" : 196315,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/reciteWord_1545032534804_WaiYanSheChuZhong_5.png",
+      "id" : "WaiYanSheChuZhong_5",
+      "title" : "外研社版初中英语-九年级上册",
+      "word_count" : 381,
+      "recitation_count" : 462,
+      "download_urls" : {
+        "download_local" : "book\/reciteWord_1545032533808_WaiYanSheChuZhong_5.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/reciteWord_1545032533808_WaiYanSheChuZhong_5.zip"
+      },
+      "index" : 54,
+      "tags" : [
+        "外研社版"
+      ]
+    },
+    {
+      "index" : 55,
+      "id" : "WaiYanSheChuZhong_6",
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/reciteWord_1545032534322_WaiYanSheChuZhong_6.png",
+      "title" : "外研社版初中英语-九年级下册",
+      "file_size" : 72801,
+      "recitation_count" : 495,
+      "tags" : [
+        "外研社版"
+      ],
+      "word_count" : 128,
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/reciteWord_1545032534071_WaiYanSheChuZhong_6.zip",
+        "download_local" : "book\/reciteWord_1545032534071_WaiYanSheChuZhong_6.zip"
+      }
+    },
+    {
+      "tags" : [
+        "人教版"
+      ],
+      "word_count" : 311,
+      "index" : 56,
+      "file_size" : 145874,
+      "title" : "人教版高中英语-必修 1",
+      "recitation_count" : 114721,
+      "id" : "PEPGaoZhong_1",
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/3_youdao_PEPGaoZhong_1.jpg",
+      "download_urls" : {
+        "download_local" : "book\/1521164674793_PEPGaoZhong_1.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164674793_PEPGaoZhong_1.zip"
+      }
+    },
+    {
+      "recitation_count" : 24566,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/3_youdao_PEPGaoZhong_2.jpg",
+      "download_urls" : {
+        "download_local" : "book\/1521164678610_PEPGaoZhong_2.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164678610_PEPGaoZhong_2.zip"
+      },
+      "word_count" : 319,
+      "title" : "人教版高中英语-必修 2",
+      "tags" : [
+        "人教版"
+      ],
+      "index" : 57,
+      "id" : "PEPGaoZhong_2",
+      "file_size" : 148700
+    },
+    {
+      "tags" : [
+        "人教版"
+      ],
+      "id" : "PEPGaoZhong_3",
+      "word_count" : 366,
+      "file_size" : 162383,
+      "index" : 58,
+      "title" : "人教版高中英语-必修 3",
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/3_youdao_PEPGaoZhong_3.jpg",
+      "recitation_count" : 47142,
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164676690_PEPGaoZhong_3.zip",
+        "download_local" : "book\/1521164676690_PEPGaoZhong_3.zip"
+      }
+    },
+    {
+      "download_urls" : {
+        "download_local" : "book\/1521164657462_PEPGaoZhong_4.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164657462_PEPGaoZhong_4.zip"
+      },
+      "index" : 59,
+      "word_count" : 307,
+      "file_size" : 129777,
+      "recitation_count" : 16866,
+      "tags" : [
+        "人教版"
+      ],
+      "title" : "人教版高中英语-必修 4",
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/3_youdao_PEPGaoZhong_4.jpg",
+      "id" : "PEPGaoZhong_4"
+    },
+    {
+      "title" : "人教版高中英语-必修 5",
+      "recitation_count" : 24188,
+      "index" : 60,
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164657147_PEPGaoZhong_5.zip",
+        "download_local" : "book\/1521164657147_PEPGaoZhong_5.zip"
+      },
+      "file_size" : 162923,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/3_youdao_PEPGaoZhong_5.jpg",
+      "tags" : [
+        "人教版"
+      ],
+      "id" : "PEPGaoZhong_5",
+      "word_count" : 357
+    },
+    {
+      "tags" : [
+        "人教版"
+      ],
+      "title" : "人教版高中英语-选修 6",
+      "id" : "PEPGaoZhong_6",
+      "file_size" : 172125,
+      "index" : 61,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/3_youdao_PEPGaoZhong_6.jpg",
+      "recitation_count" : 12203,
+      "word_count" : 391,
+      "download_urls" : {
+        "download_local" : "book\/1521164629184_PEPGaoZhong_6.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164629184_PEPGaoZhong_6.zip"
+      }
+    },
+    {
+      "recitation_count" : 8576,
+      "index" : 62,
+      "id" : "PEPGaoZhong_7",
+      "title" : "人教版高中英语-选修 7",
+      "tags" : [
+        "人教版"
+      ],
+      "word_count" : 384,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/3_youdao_PEPGaoZhong_7.jpg",
+      "file_size" : 174623,
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164648940_PEPGaoZhong_7.zip",
+        "download_local" : "book\/1521164648940_PEPGaoZhong_7.zip"
+      }
+    },
+    {
+      "word_count" : 420,
+      "recitation_count" : 7481,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/3_youdao_PEPGaoZhong_8.jpg",
+      "id" : "PEPGaoZhong_8",
+      "file_size" : 187484,
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164666266_PEPGaoZhong_8.zip",
+        "download_local" : "book\/1521164666266_PEPGaoZhong_8.zip"
+      },
+      "title" : "人教版高中英语-选修 8",
+      "index" : 63,
+      "tags" : [
+        "人教版"
+      ]
+    },
+    {
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/3_youdao_PEPGaoZhong_9.jpg",
+      "tags" : [
+        "人教版"
+      ],
+      "download_urls" : {
+        "download_local" : "book\/1521164670293_PEPGaoZhong_9.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164670293_PEPGaoZhong_9.zip"
+      },
+      "index" : 64,
+      "title" : "人教版高中英语-选修 9",
+      "word_count" : 352,
+      "recitation_count" : 3759,
+      "id" : "PEPGaoZhong_9",
+      "file_size" : 145854
+    },
+    {
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164634796_PEPGaoZhong_10.zip",
+        "download_local" : "book\/1521164634796_PEPGaoZhong_10.zip"
+      },
+      "word_count" : 361,
+      "recitation_count" : 3470,
+      "file_size" : 140211,
+      "tags" : [
+        "人教版"
+      ],
+      "id" : "PEPGaoZhong_10",
+      "index" : 65,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/3_youdao_PEPGaoZhong_10.jpg",
+      "title" : "人教版高中英语-选修 10"
+    },
+    {
+      "recitation_count" : 4450,
+      "tags" : [
+        "人教版"
+      ],
+      "index" : 66,
+      "title" : "人教版高中英语-选修 11",
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164639915_PEPGaoZhong_11.zip",
+        "download_local" : "book\/1521164639915_PEPGaoZhong_11.zip"
+      },
+      "id" : "PEPGaoZhong_11",
+      "file_size" : 120512,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/3_youdao_PEPGaoZhong_11.jpg",
+      "word_count" : 309
+    },
+    {
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164647926_ChuZhong_2.zip",
+        "download_local" : "book\/1521164647926_ChuZhong_2.zip"
+      },
+      "id" : "ChuZhong_2",
+      "file_size" : 912718,
+      "tags" : [
+        "有道"
+      ],
+      "word_count" : 1420,
+      "index" : 67,
+      "title" : "初中英语词汇（正序版）",
+      "recitation_count" : 82677,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_ChuZhong_2.jpg"
+    },
+    {
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_GaoZhong_2.jpg",
+      "title" : "高中英语词汇（正序版）",
+      "id" : "GaoZhong_2",
+      "recitation_count" : 172704,
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164675301_GaoZhong_2.zip",
+        "download_local" : "book\/1521164675301_GaoZhong_2.zip"
+      },
+      "file_size" : 1999328,
+      "tags" : [
+        "人教版"
+      ],
+      "index" : 68,
+      "word_count" : 3668
+    },
+    {
+      "tags" : [
+        "BEC"
+      ],
+      "index" : 69,
+      "word_count" : 2753,
+      "title" : "商务英语词汇",
+      "recitation_count" : 300528,
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164626760_BEC_2.zip",
+        "download_local" : "book\/1521164626760_BEC_2.zip"
+      },
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/youdao_BEC_2.jpg",
+      "file_size" : 1494016,
+      "id" : "BEC_2"
+    },
+    {
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/newOriental_BEC_3.jpg",
+      "recitation_count" : 4659,
+      "tags" : [
+        "新东方",
+        "BEC"
+      ],
+      "id" : "BEC_3",
+      "title" : "新东方 BEC 词汇",
+      "download_urls" : {
+        "download_local" : "book\/1521164649506_BEC_3.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1521164649506_BEC_3.zip"
+      },
+      "file_size" : 1502966,
+      "word_count" : 2825,
+      "index" : 70
+    },
+    {
+      "file_size" : 111762,
+      "title" : "北师大版高中必修一",
+      "word_count" : 226,
+      "recitation_count" : 5571,
+      "id" : "BeiShiGaoZhong_1",
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/reciteWord_BeiShiGaoZhong_1.jpg",
+      "index" : 71,
+      "tags" : [
+        "北师版"
+      ],
+      "download_urls" : {
+        "download_local" : "book\/reciteWord_BeiShiGaoZhong_1.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/reciteWord_BeiShiGaoZhong_1.zip"
+      }
+    },
+    {
+      "tags" : [
+        "北师版"
+      ],
+      "file_size" : 128789,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/reciteWord_BeiShiGaoZhong_2.jpg",
+      "index" : 72,
+      "title" : "北师大版高中必修二",
+      "word_count" : 244,
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1530101085958_BeiShiGaoZhong_2.zip",
+        "download_local" : "book\/1530101085958_BeiShiGaoZhong_2.zip"
+      },
+      "id" : "BeiShiGaoZhong_2",
+      "recitation_count" : 1822
+    },
+    {
+      "download_urls" : {
+        "download_local" : "book\/1530101089143_BeiShiGaoZhong_3.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1530101089143_BeiShiGaoZhong_3.zip"
+      },
+      "title" : "北师大版高中必修三",
+      "index" : 73,
+      "recitation_count" : 1437,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/reciteWord_BeiShiGaoZhong_3.jpg",
+      "word_count" : 295,
+      "file_size" : 150496,
+      "tags" : [
+        "北师版"
+      ],
+      "id" : "BeiShiGaoZhong_3"
+    },
+    {
+      "recitation_count" : 1294,
+      "title" : "北师大版高中必修四",
+      "id" : "BeiShiGaoZhong_4",
+      "index" : 74,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/reciteWord_BeiShiGaoZhong_4.jpg",
+      "file_size" : 163541,
+      "tags" : [
+        "北师版"
+      ],
+      "word_count" : 336,
+      "download_urls" : {
+        "download_local" : "book\/reciteWord_BeiShiGaoZhong_4.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/reciteWord_BeiShiGaoZhong_4.zip"
+      }
+    },
+    {
+      "index" : 75,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/reciteWord_BeiShiGaoZhong_5.jpg",
+      "file_size" : 166181,
+      "download_urls" : {
+        "download_local" : "book\/reciteWord_BeiShiGaoZhong_5.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/reciteWord_BeiShiGaoZhong_5.zip"
+      },
+      "id" : "BeiShiGaoZhong_5",
+      "recitation_count" : 1515,
+      "tags" : [
+        "北师版"
+      ],
+      "title" : "北师大版高中必修五",
+      "word_count" : 327
+    },
+    {
+      "index" : 76,
+      "title" : "北师大版高中选修六",
+      "tags" : [
+        "北师版"
+      ],
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/reciteWord_BeiShiGaoZhong_6.jpg",
+      "word_count" : 271,
+      "id" : "BeiShiGaoZhong_6",
+      "recitation_count" : 1071,
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/reciteWord_BeiShiGaoZhong_6.zip",
+        "download_local" : "book\/reciteWord_BeiShiGaoZhong_6.zip"
+      },
+      "file_size" : 121058
+    },
+    {
+      "word_count" : 334,
+      "tags" : [
+        "北师版"
+      ],
+      "recitation_count" : 880,
+      "file_size" : 166699,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/reciteWord_BeiShiGaoZhong_7.jpg",
+      "id" : "BeiShiGaoZhong_7",
+      "index" : 77,
+      "title" : "北师大版高中选修七",
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/1530101082895_BeiShiGaoZhong_7.zip",
+        "download_local" : "book\/1530101082895_BeiShiGaoZhong_7.zip"
+      }
+    },
+    {
+      "tags" : [
+        "北师版"
+      ],
+      "title" : "北师大版高中选修八",
+      "index" : 78,
+      "download_urls" : {
+        "download_local" : "book\/reciteWord_BeiShiGaoZhong_8.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/reciteWord_BeiShiGaoZhong_8.zip"
+      },
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/reciteWord_BeiShiGaoZhong_8.jpg",
+      "word_count" : 364,
+      "file_size" : 171446,
+      "id" : "BeiShiGaoZhong_8",
+      "recitation_count" : 796
+    },
+    {
+      "index" : 79,
+      "word_count" : 299,
+      "file_size" : 122391,
+      "tags" : [
+        "北师版"
+      ],
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/reciteWord_BeiShiGaoZhong_9.zip",
+        "download_local" : "book\/reciteWord_BeiShiGaoZhong_9.zip"
+      },
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/reciteWord_BeiShiGaoZhong_9.jpg",
+      "id" : "BeiShiGaoZhong_9",
+      "recitation_count" : 493,
+      "title" : "北师大版高中选修九"
+    },
+    {
+      "id" : "BeiShiGaoZhong_10",
+      "file_size" : 108057,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/reciteWord_BeiShiGaoZhong_10.jpg",
+      "download_urls" : {
+        "download_local" : "book\/reciteWord_BeiShiGaoZhong_10.zip",
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/reciteWord_BeiShiGaoZhong_10.zip"
+      },
+      "index" : 80,
+      "title" : "北师大版高中选修十",
+      "tags" : [
+        "北师版"
+      ],
+      "recitation_count" : 485,
+      "word_count" : 267
+    },
+    {
+      "recitation_count" : 739,
+      "image_url" : "https:\/\/nos.netease.com\/ydschool-online\/reciteWord_BeiShiGaoZhong_11.jpg",
+      "word_count" : 330,
+      "index" : 81,
+      "tags" : [
+        "北师版"
+      ],
+      "id" : "BeiShiGaoZhong_11",
+      "download_urls" : {
+        "download_original" : "http:\/\/ydschool-online.nos.netease.com\/reciteWord_BeiShiGaoZhong_11.zip",
+        "download_local" : "book\/reciteWord_BeiShiGaoZhong_11.zip"
+      },
+      "title" : "北师大版高中选修十一",
+      "file_size" : 139130
+    }
+  ]
+}

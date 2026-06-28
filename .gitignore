@@ -1,0 +1,8 @@
+.build/
+.DS_Store
+*.swp
+*.swo
+*.lock
+Flashcard.app/
+Flashcard-Installer.dmg
+Flashcard
