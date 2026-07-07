@@ -25,23 +25,38 @@ make app        # 生成 Flashcard.app
 make dmg        # 生成 DMG 安装包（Flashcard-Installer.dmg）
 make install    # 安装到 /Applications
 make run-app    # 生成 .app 并打开
+make ios        # 编译 iOS 版
 ```
 
 ## 目录结构
 
 ```
-Flashcard.app/              # 构建产物
-Resources/
-├── Info.plist              # 应用配置
-├── config.json             # 初始配置文件
-└── libs/                   # 初始词库
-Sources/Flashcard/
-├── FlashcardApp.swift      # 入口 + 窗口管理
-├── ContentView.swift       # 单词卡片 UI
-├── SettingsView.swift      # 设置页面
-├── AppViewModel.swift      # 中央状态管理
-├── Models.swift            # 数据模型
-├── AudioService.swift      # 发音播放
-├── LibraryService.swift    # 词库下载/加载
-└── ConfigService.swift     # 配置读写
+Shared/                     # 公共代码库（SPM package）
+├── Package.swift
+└── Sources/
+    ├── AppViewModel.swift
+    ├── AudioService.swift
+    ├── ConfigService.swift
+    ├── LibraryService.swift
+    └── Models.swift
+mac/                        # macOS 桌面版
+├── Package.swift
+├── Makefile
+├── Resources/
+│   ├── Info.plist
+│   ├── config.json
+│   ├── Flashcard.icns
+│   ├── gen-icon.swift
+│   ├── gen-dmg-bg.swift
+│   └── libs/
+└── Sources/Flashcard/
+    ├── FlashcardApp.swift
+    ├── ContentView.swift
+    └── SettingsView.swift
+ios/                        # iOS 版（纯 SwiftUI）
+├── Package.swift
+└── Sources/Flashcard/
+    ├── FlashcardApp.swift
+    ├── ContentView.swift
+    └── SettingsView.swift
 ```
