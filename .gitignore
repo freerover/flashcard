@@ -2,10 +2,10 @@
 .DS_Store
 *.swp
 *.swo
-mac/.build/
+macos/.build/
 ios/.build/
 Shared/.build/
-mac/Flashcard.app/
+macos/Flashcard.app/
 Flashcard.app/
 Flashcard-Installer.dmg
 ios/.swiftpm/

@@ -39,9 +39,10 @@ Shared/                     # 公共代码库（SPM package）
     ├── ConfigService.swift
     ├── LibraryService.swift
     └── Models.swift
-mac/                        # macOS 桌面版
+macos/                      # macOS 桌面版
 ├── Package.swift
 ├── Makefile
+├── Info.plist
 ├── Resources/
 │   ├── Info.plist
 │   ├── config.json

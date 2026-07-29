@@ -2,7 +2,7 @@
 
 APP_NAME = Flashcard
 DMG_NAME = Flashcard-Installer
-XCODE = DEVELOPER_DIR=/Applications/Xcode15.app/Contents/Developer
+XCODE = DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer
 
 build:
 	$(XCODE) swift build -c release
