@@ -2,10 +2,12 @@
 .DS_Store
 *.swp
 *.swo
-*.lock
 mac/.build/
 ios/.build/
 Shared/.build/
 mac/Flashcard.app/
 Flashcard.app/
 Flashcard-Installer.dmg
+ios/.swiftpm/
+*.xcuserdatad/
+*.xcuserstate

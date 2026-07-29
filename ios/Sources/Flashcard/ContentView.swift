@@ -5,24 +5,39 @@ struct ContentView: View {
     @EnvironmentObject var viewModel: AppViewModel
 
     var body: some View {
-        VStack(spacing: 16) {
-            if let name = activeLibraryName {
-                Text(name)
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-            }
+        VStack(spacing: 0) {
             if viewModel.hasWords, let word = viewModel.currentWord {
-                wordCardView(word: word)
+                ScrollView {
+                    VStack(spacing: 16) {
+                        if let name = activeLibraryName {
+                            Text(name)
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
+                        wordCardView(word: word)
+                    }
+                    .padding()
+                }
+                .contentShape(Rectangle())
+                .gesture(
+                    DragGesture(minimumDistance: 20)
+                        .onEnded { value in
+                            if value.translation.width < -50 {
+                                viewModel.nextWord()
+                            } else if value.translation.width > 50 {
+                                viewModel.previousWord()
+                            }
+                        }
+                )
+                navigationView
+                    .padding(.horizontal)
+                    .padding(.bottom, 8)
             } else {
                 emptyStateView
-            }
-            Spacer()
-            if viewModel.hasWords {
-                navigationView
+                    .frame(maxHeight: .infinity)
             }
         }
-        .padding()
     }
 
     private func wordCardView(word: Word) -> some View {

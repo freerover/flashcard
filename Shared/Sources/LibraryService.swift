@@ -13,8 +13,13 @@ public class LibraryService: NSObject {
     private let libsDir: URL
 
     private override init() {
-        let home = FileManager.default.homeDirectoryForCurrentUser
-        libsDir = home.appendingPathComponent(".flashcard/libs")
+        let base: URL
+        #if os(iOS)
+        base = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        #else
+        base = FileManager.default.homeDirectoryForCurrentUser
+        #endif
+        libsDir = base.appendingPathComponent(".flashcard/libs")
         super.init()
     }
 
@@ -55,6 +60,9 @@ public class LibraryService: NSObject {
     }
 
     private func extractZip(at source: URL, to destination: URL) throws {
+        #if os(iOS)
+        throw NSError(domain: "Flashcard", code: -2, userInfo: [NSLocalizedDescriptionKey: "iOS 暂不支持在线下载词库，请使用内置词库"])
+        #else
         let process = Process()
         process.executableURL = URL(fileURLWithPath: "/usr/bin/unzip")
         process.arguments = ["-o", source.path, "-d", destination.path]
@@ -63,6 +71,7 @@ public class LibraryService: NSObject {
         if process.terminationStatus != 0 {
             throw NSError(domain: "Flashcard", code: -2, userInfo: [NSLocalizedDescriptionKey: "解压失败"])
         }
+        #endif
     }
 }
 

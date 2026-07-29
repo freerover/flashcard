@@ -11,7 +11,7 @@ struct SettingsView: View {
                 if let libraries = viewModel.config?.libraries, !libraries.isEmpty {
                     let filtered = filterLibraries(libraries)
                     if filtered.isEmpty {
-                        if #available(macOS 14, *) {
+                        if #available(iOS 17, macOS 14, *) {
                             ContentUnavailableView.search(text: searchText)
                         } else {
                             Text("没有匹配「\(searchText)」的词库")
@@ -24,7 +24,7 @@ struct SettingsView: View {
                         }
                     }
                 } else {
-                    if #available(macOS 14, *) {
+                    if #available(iOS 17, macOS 14, *) {
                         ContentUnavailableView(
                             "没有词库",
                             systemImage: "tray",

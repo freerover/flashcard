@@ -8,8 +8,13 @@ public class ConfigService {
     public let libsDir: URL
 
     private init() {
-        let home = FileManager.default.homeDirectoryForCurrentUser
-        configDir = home.appendingPathComponent(".flashcard")
+        let base: URL
+        #if os(iOS)
+        base = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        #else
+        base = FileManager.default.homeDirectoryForCurrentUser
+        #endif
+        configDir = base.appendingPathComponent(".flashcard")
         configFile = configDir.appendingPathComponent("config.json")
         libsDir = configDir.appendingPathComponent("libs")
     }

@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "Flashcard",
-    platforms: [.macOS(.v13), .iOS(.v17)],
+    platforms: [.macOS(.v13), .iOS(.v16)],
     dependencies: [
         .package(path: "../Shared")
     ],
