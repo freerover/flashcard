@@ -64,9 +64,8 @@ struct LibraryRow: View {
     var body: some View {
         HStack(spacing: 12) {
             indexView
-            coverImageView
             infoView
-            Spacer()
+                .frame(maxWidth: .infinity, alignment: .leading)
             actionButtons
         }
         .padding(.vertical, 4)
@@ -79,46 +78,14 @@ struct LibraryRow: View {
             .frame(width: 24, alignment: .leading)
     }
 
-    private var coverImageView: some View {
-        AsyncImage(url: URL(string: library.imageURL)) { phase in
-            switch phase {
-            case .success(let image):
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 56, height: 56)
-                    .clipped()
-            case .failure:
-                Image(systemName: "book.closed")
-                    .font(.title2)
-                    .foregroundColor(.secondary)
-                    .frame(width: 56, height: 56)
-            case .empty:
-                ProgressView()
-                    .frame(width: 56, height: 56)
-            @unknown default:
-                EmptyView()
-            }
-        }
-        #if os(iOS)
-        .background(Color(.systemGray6))
-        #else
-        .background(Color.gray.opacity(0.15))
-        #endif
-        .cornerRadius(8)
-    }
-
     private var infoView: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(library.title)
-                .font(.headline)
+                .font(.system(size: 14))
                 .lineLimit(2)
 
             HStack(spacing: 12) {
-                Label("\(library.wordCount) 词", systemImage: "text.word.count")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-                Label(formatFileSize(library.fileSize), systemImage: "doc")
+                Text("\(library.wordCount) 词")
                     .font(.caption)
                     .foregroundColor(.secondary)
             }
@@ -160,7 +127,8 @@ struct LibraryRow: View {
                         viewModel.downloadLibrary(library)
                     }
                     .buttonStyle(.borderedProminent)
-                    .controlSize(.small)
+                    .controlSize(.mini)
+                    .font(.caption2)
                 } else {
                     Text("已下载")
                         .font(.caption)
@@ -177,9 +145,11 @@ struct LibraryRow: View {
                     EmptyView()
                 }
                 .toggleStyle(.switch)
-                .controlSize(.small)
+                .controlSize(.mini)
+                .scaleEffect(0.8)
                 .disabled(!state.isDownloaded)
             }
+            .frame(maxWidth: 50)
         }
     }
 

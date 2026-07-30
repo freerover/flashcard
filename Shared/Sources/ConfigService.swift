@@ -27,30 +27,28 @@ public class ConfigService {
         if !fm.fileExists(atPath: libsDir.path) {
             try? fm.createDirectory(at: libsDir, withIntermediateDirectories: true)
         }
-        if !fm.fileExists(atPath: configFile.path) {
-            if let bundled = Bundle.main.resourceURL?.appendingPathComponent("config.json"),
-               fm.fileExists(atPath: bundled.path),
-               let data = try? Data(contentsOf: bundled) {
+        if let bundled = Bundle.main.resourceURL?.appendingPathComponent("config.json"),
+           fm.fileExists(atPath: bundled.path),
+           let data = try? Data(contentsOf: bundled) {
+            try? data.write(to: configFile, options: .atomic)
+        } else if !fm.fileExists(atPath: configFile.path) {
+            let defaultLib = Library(
+                id: "CET4luan_1",
+                index: 1,
+                imageURL: "https://nos.netease.com/ydschool-online/1496632727200CET4luan_1.jpg",
+                title: "四级真题核心词（image_url记忆）",
+                wordCount: 1162,
+                fileSize: 788457,
+                recitationCount: 875260,
+                downloadURLs: DownloadURLs(
+                    downloadLocal: "~/.flashcard/libs/1523620217431_CET4luan_1.zip",
+                    downloadOriginal: "http://ydschool-online.nos.netease.com/1523620217431_CET4luan_1.zip"
+                ),
+                tags: ["四级", "有道"]
+            )
+            let config = Config(activeLibrary: "CET4luan_1", libraries: [defaultLib])
+            if let data = try? JSONEncoder.pretty.encode(config) {
                 try? data.write(to: configFile, options: .atomic)
-            } else {
-                let defaultLib = Library(
-                    id: "CET4luan_1",
-                    index: 1,
-                    imageURL: "https://nos.netease.com/ydschool-online/1496632727200CET4luan_1.jpg",
-                    title: "四级真题核心词（image_url记忆）",
-                    wordCount: 1162,
-                    fileSize: 788457,
-                    recitationCount: 875260,
-                    downloadURLs: DownloadURLs(
-                        downloadLocal: "~/.flashcard/libs/1523620217431_CET4luan_1.zip",
-                        downloadOriginal: "http://ydschool-online.nos.netease.com/1523620217431_CET4luan_1.zip"
-                    ),
-                    tags: ["四级", "有道"]
-                )
-                let config = Config(activeLibrary: "CET4luan_1", libraries: [defaultLib])
-                if let data = try? JSONEncoder.pretty.encode(config) {
-                    try? data.write(to: configFile, options: .atomic)
-                }
             }
         }
         copyBundledLibs()

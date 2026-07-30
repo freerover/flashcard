@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		AE0000000000000000000012 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE000000000000000000000E /* ContentView.swift */; };
 		AE0000000000000000000013 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE000000000000000000000F /* SettingsView.swift */; };
 		AE0000000000000000000016 /* FlashcardShared in Frameworks */ = {isa = PBXBuildFile; productRef = AE0000000000000000000015 /* FlashcardShared */; };
+		AE0000000000000000000019 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = AE000000000000000000001A /* config.json */; };
+		AE000000000000000000001E /* libs in Resources */ = {isa = PBXBuildFile; fileRef = AE000000000000000000001D /* libs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		AE000000000000000000000E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AE000000000000000000000F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AE0000000000000000000010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE000000000000000000001A /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		AE000000000000000000001D /* libs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,24 +36,46 @@
 		};
 /* End PBXFrameworksBuildPhase section */
 
+/* Begin PBXResourcesBuildPhase section */
+		AE000000000000000000001C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE000000000000000000001E /* libs in Resources */,
+				AE0000000000000000000019 /* config.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXGroup section */
-		AE0000000000000000000002 /* = */ = {
+		AE0000000000000000000002 = {
 			isa = PBXGroup;
 			children = (
 				AE0000000000000000000010 /* Info.plist */,
-				AE0000000000000000000003 /* Flashcard */,
+				AE0000000000000000000003 /* Sources/Flashcard */,
+				AE000000000000000000001B /* Resources */,
 				AE0000000000000000000004 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AE0000000000000000000003 /* Flashcard */ = {
+		AE000000000000000000001B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE000000000000000000001D /* libs */,
+				AE000000000000000000001A /* config.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE0000000000000000000003 /* Sources/Flashcard */ = {
 			isa = PBXGroup;
 			children = (
 				AE000000000000000000000D /* FlashcardApp.swift */,
 				AE000000000000000000000E /* ContentView.swift */,
 				AE000000000000000000000F /* SettingsView.swift */,
 			);
-			path = "Sources/Flashcard";
+			path = Sources/Flashcard;
 			sourceTree = "<group>";
 		};
 		AE0000000000000000000004 /* Products */ = {
@@ -69,6 +95,7 @@
 			buildPhases = (
 				AE0000000000000000000018 /* Sources */,
 				AE0000000000000000000017 /* Frameworks */,
+				AE000000000000000000001C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -103,7 +130,7 @@
 			);
 			mainGroup = AE0000000000000000000002;
 			packageReferences = (
-				AE0000000000000000000014 /* Local package reference */,
+				AE0000000000000000000014 /* XCLocalSwiftPackageReference "../Shared" */,
 			);
 			productRefGroup = AE0000000000000000000004 /* Products */;
 			projectDirPath = "";
@@ -134,6 +161,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K39NTDQM3U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -156,6 +184,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K39NTDQM3U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -245,7 +274,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		AE0000000000000000000014 /* Local package reference */ = {
+		AE0000000000000000000014 /* XCLocalSwiftPackageReference "../Shared" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../Shared;
 		};
@@ -255,10 +284,8 @@
 		AE0000000000000000000015 /* FlashcardShared */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FlashcardShared;
-			localSwiftPackageReference = AE0000000000000000000014 /* Local package reference */;
 		};
 /* End XCSwiftPackageProductDependency section */
-
 	};
 	rootObject = AE0000000000000000000001 /* Project object */;
 }

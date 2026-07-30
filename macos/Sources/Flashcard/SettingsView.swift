@@ -110,9 +110,8 @@ struct LibraryRow: View {
     var body: some View {
         HStack(spacing: 12) {
             indexView
-            coverImageView
             infoView
-            Spacer()
+                .frame(maxWidth: .infinity, alignment: .leading)
             actionButtons
         }
         .padding(.vertical, 6)
@@ -125,42 +124,14 @@ struct LibraryRow: View {
             .frame(width: 24, alignment: .leading)
     }
 
-    private var coverImageView: some View {
-        AsyncImage(url: URL(string: library.imageURL)) { phase in
-            switch phase {
-            case .success(let image):
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 64, height: 64)
-                    .clipped()
-            case .failure:
-                Image(systemName: "book.closed")
-                    .font(.title2)
-                    .foregroundColor(.secondary)
-                    .frame(width: 64, height: 64)
-            case .empty:
-                ProgressView()
-                    .frame(width: 64, height: 64)
-            @unknown default:
-                EmptyView()
-            }
-        }
-        .background(Color(.controlBackgroundColor))
-        .cornerRadius(8)
-    }
-
     private var infoView: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(library.title)
-                .font(.headline)
+                .font(.system(size: 14))
                 .lineLimit(2)
 
             HStack(spacing: 16) {
-                Label("\(library.wordCount) 词", systemImage: "text.word.count")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-                Label(formatFileSize(library.fileSize), systemImage: "doc")
+                Text("\(library.wordCount) 词")
                     .font(.caption)
                     .foregroundColor(.secondary)
             }
@@ -182,47 +153,51 @@ struct LibraryRow: View {
     @ViewBuilder
     private var actionButtons: some View {
         if let state = viewModel.libraryStates[library.id] {
-            if state.isDownloading || state.isExtracting {
-                VStack(spacing: 4) {
-                    if state.isExtracting {
-                        ProgressView()
-                            .scaleEffect(0.7)
-                        Text("解压中...")
-                            .font(.caption2)
-                            .foregroundColor(.secondary)
-                    } else {
-                        ProgressView(value: state.downloadProgress)
-                            .frame(width: 60)
-                        Text("\(Int(state.downloadProgress * 100))%")
-                            .font(.caption2)
-                            .foregroundColor(.secondary)
+            VStack(alignment: .trailing, spacing: 6) {
+                if state.isDownloading || state.isExtracting {
+                    VStack(spacing: 4) {
+                        if state.isExtracting {
+                            ProgressView()
+                                .scaleEffect(0.7)
+                            Text("解压中...")
+                                .font(.caption2)
+                                .foregroundColor(.secondary)
+                        } else {
+                            ProgressView(value: state.downloadProgress)
+                                .frame(width: 30)
+                            Text("\(Int(state.downloadProgress * 100))%")
+                                .font(.caption2)
+                                .foregroundColor(.secondary)
+                        }
                     }
+                } else if !state.isDownloaded {
+                    Button("下载") {
+                        viewModel.downloadLibrary(library)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .controlSize(.mini)
+                    .font(.caption2)
+                } else {
+                    Text("已下载")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
                 }
-                .frame(width: 70)
-            } else if !state.isDownloaded {
-                Button("下载") {
-                    viewModel.downloadLibrary(library)
-                }
-                .buttonStyle(.borderedProminent)
-                .controlSize(.small)
-            } else {
-                Text("已下载")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-            }
 
-            let isEnabled = viewModel.activeLibraryId == library.id
-            Toggle(isOn: Binding(
-                get: { isEnabled },
-                set: { newValue in
-                    if newValue { viewModel.enableLibrary(library.id) }
+                let isEnabled = viewModel.activeLibraryId == library.id
+                Toggle(isOn: Binding(
+                    get: { isEnabled },
+                    set: { newValue in
+                        if newValue { viewModel.enableLibrary(library.id) }
+                    }
+                )) {
+                    EmptyView()
                 }
-            )) {
-                EmptyView()
-            }
-            .toggleStyle(.switch)
-            .controlSize(.small)
+                .toggleStyle(.switch)
+            .controlSize(.mini)
+            .scaleEffect(0.8)
             .disabled(!state.isDownloaded)
+            }
+            .frame(maxWidth: 50)
         }
     }
 
