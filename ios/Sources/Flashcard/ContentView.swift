@@ -13,19 +13,19 @@ struct ContentView: View {
                     VStack(spacing: 16) {
                         HStack {
                             if let name = activeLibraryName {
-                                Button {
-                                    showWordList = true
-                                } label: {
-                                    Text(name)
-                                        .font(.caption)
-                                        .foregroundColor(.secondary)
-                                }
-                                .buttonStyle(.plain)
+                                Text(name)
+                                    .font(.caption)
+                                    .foregroundColor(.secondary)
                             }
                             Spacer()
-                            Text("\(viewModel.currentIndex + 1) / \(viewModel.wordCount)")
-                                .font(.caption)
-                                .foregroundColor(.secondary)
+                            Button {
+                                showWordList = true
+                            } label: {
+                                Text("\(viewModel.currentIndex + 1) / \(viewModel.wordCount)")
+                                    .font(.caption)
+                                    .foregroundColor(.secondary)
+                            }
+                            .buttonStyle(.plain)
                         }
                         .frame(maxWidth: .infinity)
                         wordCardView(word: word)
