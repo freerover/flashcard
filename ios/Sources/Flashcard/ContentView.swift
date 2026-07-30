@@ -3,18 +3,31 @@ import FlashcardShared
 
 struct ContentView: View {
     @EnvironmentObject var viewModel: AppViewModel
+    @State private var showWordList = false
+    @State private var searchText = ""
 
     var body: some View {
         VStack(spacing: 0) {
             if viewModel.hasWords, let word = viewModel.currentWord {
                 ScrollView {
                     VStack(spacing: 16) {
-                        if let name = activeLibraryName {
-                            Text(name)
+                        HStack {
+                            if let name = activeLibraryName {
+                                Button {
+                                    showWordList = true
+                                } label: {
+                                    Text(name)
+                                        .font(.caption)
+                                        .foregroundColor(.secondary)
+                                }
+                                .buttonStyle(.plain)
+                            }
+                            Spacer()
+                            Text("\(viewModel.currentIndex + 1) / \(viewModel.wordCount)")
                                 .font(.caption)
                                 .foregroundColor(.secondary)
-                                .frame(maxWidth: .infinity, alignment: .leading)
                         }
+                        .frame(maxWidth: .infinity)
                         wordCardView(word: word)
                     }
                     .padding()
@@ -30,12 +43,53 @@ struct ContentView: View {
                             }
                         }
                 )
-                navigationView
-                    .padding(.horizontal)
-                    .padding(.bottom, 8)
             } else {
                 emptyStateView
                     .frame(maxHeight: .infinity)
+            }
+        }
+        .sheet(isPresented: $showWordList) {
+            wordListView
+        }
+    }
+
+    private var wordListView: some View {
+        NavigationStack {
+            let filtered = searchText.isEmpty ? viewModel.words : viewModel.words.filter { $0.word.localizedCaseInsensitiveContains(searchText) }
+            List(Array(filtered.enumerated()), id: \.element.id) { index, word in
+                Button {
+                    if let originalIndex = viewModel.words.firstIndex(where: { $0.id == word.id }) {
+                        viewModel.currentIndex = originalIndex
+                    }
+                    showWordList = false
+                } label: {
+                    HStack(spacing: 8) {
+                        Text("\(index + 1)")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                            .frame(width: 30, alignment: .leading)
+                        Text(word.word)
+                            .foregroundColor(.primary)
+                        Spacer()
+                        if let trans = word.translation {
+                            Text(trans)
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                                .lineLimit(1)
+                        }
+                        if word.id == viewModel.currentWord?.id {
+                            Image(systemName: "checkmark")
+                                .foregroundColor(.accentColor)
+                        }
+                    }
+                }
+            }
+            .navigationTitle("")
+            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "搜索单词")
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("关闭") { showWordList = false }
+                }
             }
         }
     }
@@ -126,26 +180,6 @@ struct ContentView: View {
                 .multilineTextAlignment(.center)
         }
         .padding(.vertical, 40)
-    }
-
-    private var navigationView: some View {
-        HStack(spacing: 16) {
-            Button(action: viewModel.previousWord) {
-                Label("Previous", systemImage: "chevron.left")
-            }
-            .buttonStyle(.borderedProminent)
-            .tint(.blue)
-
-            Text("\(viewModel.currentIndex + 1) / \(viewModel.wordCount)")
-                .font(.caption)
-                .foregroundColor(.secondary)
-
-            Button(action: viewModel.nextWord) {
-                Label("Next", systemImage: "chevron.right")
-            }
-            .buttonStyle(.borderedProminent)
-            .tint(.blue)
-        }
     }
 
     private var activeLibraryName: String? {
