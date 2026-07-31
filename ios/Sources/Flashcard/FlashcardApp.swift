@@ -1,9 +1,16 @@
 import SwiftUI
+import UIKit
 import FlashcardShared
 
 @main
 struct FlashcardApp: App {
     @StateObject private var viewModel = AppViewModel.shared
+
+    init() {
+        UINavigationBar.appearance().largeTitleTextAttributes = [
+            .font: UIFont.systemFont(ofSize: 24, weight: .bold)
+        ]
+    }
 
     var body: some Scene {
         WindowGroup {

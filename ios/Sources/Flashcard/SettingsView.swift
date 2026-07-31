@@ -84,23 +84,9 @@ struct LibraryRow: View {
                 .font(.system(size: 14))
                 .lineLimit(2)
 
-            HStack(spacing: 12) {
-                Text("\(library.wordCount) 词")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-            }
-
-            HStack(spacing: 6) {
-                ForEach(library.tags, id: \.self) { tag in
-                    Text(tag)
-                        .font(.caption2)
-                        .padding(.horizontal, 6)
-                        .padding(.vertical, 2)
-                        .background(Color.accentColor.opacity(0.12))
-                        .foregroundColor(.accentColor)
-                        .cornerRadius(4)
-                }
-            }
+            Text("\(library.wordCount) 词")
+                .font(.caption)
+                .foregroundColor(.secondary)
         }
     }
 
