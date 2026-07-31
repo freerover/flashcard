@@ -46,8 +46,8 @@ struct SettingsView: View {
                     }
                 }
             }
-            .navigationTitle("词库管理")
             .searchable(text: $searchText, prompt: "搜索词库...")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 

@@ -23,7 +23,7 @@ struct ContentView: View {
                             } label: {
                                 Text("\(viewModel.currentIndex + 1) / \(viewModel.wordCount)")
                                     .font(.caption)
-                                    .foregroundColor(.secondary)
+                                    .foregroundColor(.blue)
                             }
                             .buttonStyle(.plain)
                         }

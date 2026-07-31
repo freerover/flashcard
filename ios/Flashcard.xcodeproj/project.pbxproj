@@ -13,6 +13,7 @@
 		AE0000000000000000000016 /* FlashcardShared in Frameworks */ = {isa = PBXBuildFile; productRef = AE0000000000000000000015 /* FlashcardShared */; };
 		AE0000000000000000000019 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = AE000000000000000000001A /* config.json */; };
 		AE000000000000000000001E /* libs in Resources */ = {isa = PBXBuildFile; fileRef = AE000000000000000000001D /* libs */; };
+		AE000000000000000000001F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0000000000000000000020 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		AE0000000000000000000010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE000000000000000000001A /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
 		AE000000000000000000001D /* libs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libs; sourceTree = "<group>"; };
+		AE0000000000000000000020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			files = (
 				AE000000000000000000001E /* libs in Resources */,
 				AE0000000000000000000019 /* config.json in Resources */,
+				AE000000000000000000001F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +77,7 @@
 				AE000000000000000000000D /* FlashcardApp.swift */,
 				AE000000000000000000000E /* ContentView.swift */,
 				AE000000000000000000000F /* SettingsView.swift */,
+				AE0000000000000000000020 /* Assets.xcassets */,
 			);
 			path = Sources/Flashcard;
 			sourceTree = "<group>";
@@ -283,6 +287,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		AE0000000000000000000015 /* FlashcardShared */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = AE0000000000000000000014 /* XCLocalSwiftPackageReference "../Shared" */;
 			productName = FlashcardShared;
 		};
 /* End XCSwiftPackageProductDependency section */
