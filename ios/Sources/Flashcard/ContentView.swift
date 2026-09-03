@@ -5,6 +5,8 @@ struct ContentView: View {
     @EnvironmentObject var viewModel: AppViewModel
     @State private var showWordList = false
     @State private var searchText = ""
+    @State private var autoPlayActive = true
+    @State private var autoPlayTimer: Timer?
 
     var body: some View {
         VStack(spacing: 0) {
@@ -18,6 +20,15 @@ struct ContentView: View {
                                     .foregroundColor(.secondary)
                             }
                             Spacer()
+                            Button {
+                                autoPlayActive.toggle()
+                                if autoPlayActive { startAutoPlay() } else { stopAutoPlay() }
+                            } label: {
+                                Image(systemName: autoPlayActive ? "pause.fill" : "play.fill")
+                                    .font(.caption)
+                                    .foregroundColor(.blue)
+                            }
+                            .buttonStyle(.plain)
                             Button {
                                 showWordList = true
                             } label: {
@@ -43,6 +54,9 @@ struct ContentView: View {
                             }
                         }
                 )
+                .onAppear { startAutoPlay() }
+                .onDisappear { stopAutoPlay() }
+                .onChange(of: viewModel.currentIndex) { _ in startAutoPlay() }
             } else {
                 emptyStateView
                     .frame(maxHeight: .infinity)
@@ -184,5 +198,22 @@ struct ContentView: View {
 
     private var activeLibraryName: String? {
         viewModel.config?.libraries.first { $0.id == viewModel.activeLibraryId }?.title
+    }
+
+    private func startAutoPlay() {
+        autoPlayTimer?.invalidate()
+        guard autoPlayActive, let word = viewModel.currentWord else { return }
+        AudioService.shared.play(word: word.word, type: 2)
+        autoPlayTimer = Timer.scheduledTimer(withTimeInterval: 3.0, repeats: true) { _ in
+            Task { @MainActor in
+                guard autoPlayActive, let w = viewModel.currentWord else { return }
+                AudioService.shared.play(word: w.word, type: 2)
+            }
+        }
+    }
+
+    private func stopAutoPlay() {
+        autoPlayTimer?.invalidate()
+        autoPlayTimer = nil
     }
 }
