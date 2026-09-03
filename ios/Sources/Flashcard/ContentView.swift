@@ -21,15 +21,6 @@ struct ContentView: View {
                             }
                             Spacer()
                             Button {
-                                autoPlayActive.toggle()
-                                if autoPlayActive { startAutoPlay() } else { stopAutoPlay() }
-                            } label: {
-                                Image(systemName: autoPlayActive ? "pause.fill" : "play.fill")
-                                    .font(.caption)
-                                    .foregroundColor(.blue)
-                            }
-                            .buttonStyle(.plain)
-                            Button {
                                 showWordList = true
                             } label: {
                                 Text("\(viewModel.currentIndex + 1) / \(viewModel.wordCount)")
@@ -40,6 +31,16 @@ struct ContentView: View {
                         }
                         .frame(maxWidth: .infinity)
                         wordCardView(word: word)
+                        Button {
+                            autoPlayActive.toggle()
+                            if autoPlayActive { startAutoPlay() } else { stopAutoPlay() }
+                        } label: {
+                            Image(systemName: autoPlayActive ? "pause.fill" : "play.fill")
+                                .font(.title3)
+                                .foregroundColor(.blue)
+                                .frame(maxWidth: .infinity)
+                        }
+                        .buttonStyle(.bordered)
                     }
                     .padding()
                 }
