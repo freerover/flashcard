@@ -4,10 +4,19 @@ import FlashcardShared
 struct SettingsView: View {
     @EnvironmentObject var viewModel: AppViewModel
     @State private var searchText = ""
+    @AppStorage("autoPlayEnabled") private var autoPlayEnabled = true
 
     var body: some View {
         NavigationStack {
             List {
+                Section {
+                    Toggle(isOn: $autoPlayEnabled) {
+                        Label("自动播放发音", systemImage: "speaker.wave.2")
+                    }
+                } header: {
+                    Text("播放")
+                }
+
                 if let libraries = viewModel.config?.libraries, !libraries.isEmpty {
                     let filtered = filterLibraries(libraries)
                     if filtered.isEmpty {

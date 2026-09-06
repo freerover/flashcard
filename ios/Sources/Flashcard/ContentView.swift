@@ -7,6 +7,7 @@ struct ContentView: View {
     @State private var searchText = ""
     @State private var autoPlayActive = true
     @State private var autoPlayTimer: Timer?
+    @AppStorage("autoPlayEnabled") private var autoPlayEnabled = true
 
     var body: some View {
         VStack(spacing: 0) {
@@ -32,19 +33,21 @@ struct ContentView: View {
                         .frame(maxWidth: .infinity)
                         wordCardView(word: word)
                         prevNextRow(currentWord: word)
-                        Button {
-                            autoPlayActive.toggle()
-                            if autoPlayActive { startAutoPlay() } else { stopAutoPlay() }
-                        } label: {
-                            Image(systemName: autoPlayActive ? "pause.fill" : "play.fill")
-                                .font(.title3)
-                                .foregroundColor(.white)
-                                .frame(width: 56, height: 56)
-                                .background(Circle().fill(Color.blue))
+                        if autoPlayEnabled {
+                            Button {
+                                autoPlayActive.toggle()
+                                if autoPlayActive { startAutoPlay() } else { stopAutoPlay() }
+                            } label: {
+                                Image(systemName: autoPlayActive ? "pause.fill" : "play.fill")
+                                    .font(.title3)
+                                    .foregroundColor(.white)
+                                    .frame(width: 56, height: 56)
+                                    .background(Circle().fill(Color.blue))
+                            }
+                            .buttonStyle(.plain)
+                            .frame(maxWidth: .infinity)
+                            .padding(.top, 8)
                         }
-                        .buttonStyle(.plain)
-                        .frame(maxWidth: .infinity)
-                        .padding(.top, 8)
                     }
                     .padding()
                 }
@@ -259,11 +262,11 @@ struct ContentView: View {
 
     private func startAutoPlay() {
         autoPlayTimer?.invalidate()
-        guard autoPlayActive, let word = viewModel.currentWord else { return }
+        guard autoPlayEnabled, autoPlayActive, let word = viewModel.currentWord else { return }
         AudioService.shared.play(word: word.word, type: 2)
         autoPlayTimer = Timer.scheduledTimer(withTimeInterval: 3.0, repeats: true) { _ in
             Task { @MainActor in
-                guard autoPlayActive, let w = viewModel.currentWord else { return }
+                guard autoPlayEnabled, autoPlayActive, let w = viewModel.currentWord else { return }
                 AudioService.shared.play(word: w.word, type: 2)
             }
         }
