@@ -31,6 +31,7 @@ struct ContentView: View {
                         }
                         .frame(maxWidth: .infinity)
                         wordCardView(word: word)
+                        prevNextRow(currentWord: word)
                         Button {
                             autoPlayActive.toggle()
                             if autoPlayActive { startAutoPlay() } else { stopAutoPlay() }
@@ -202,6 +203,58 @@ struct ContentView: View {
 
     private var activeLibraryName: String? {
         viewModel.config?.libraries.first { $0.id == viewModel.activeLibraryId }?.title
+    }
+
+    private func prevNextRow(currentWord: Word) -> some View {
+        let prev = prevWord(before: currentWord)
+        let next = nextWord(after: currentWord)
+        return HStack {
+            if let prev {
+                Button {
+                    viewModel.previousWord()
+                } label: {
+                    Label(prev.word, systemImage: "arrow.left")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                }
+                .buttonStyle(.plain)
+            } else {
+                Spacer()
+            }
+            Spacer()
+            if let next {
+                Button {
+                    viewModel.nextWord()
+                } label: {
+                    Label(next.word, systemImage: "arrow.right")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                }
+                .buttonStyle(.plain)
+            } else {
+                Spacer()
+            }
+        }
+    }
+
+    private func previousWordIndex(for current: Word) -> Int? {
+        guard let idx = viewModel.words.firstIndex(where: { $0.id == current.id }) else { return nil }
+        return (idx - 1 + viewModel.words.count) % viewModel.words.count
+    }
+
+    private func nextWordIndex(for current: Word) -> Int? {
+        guard let idx = viewModel.words.firstIndex(where: { $0.id == current.id }) else { return nil }
+        return (idx + 1) % viewModel.words.count
+    }
+
+    private func prevWord(before current: Word) -> Word? {
+        guard let idx = previousWordIndex(for: current) else { return nil }
+        return viewModel.words[idx]
+    }
+
+    private func nextWord(after current: Word) -> Word? {
+        guard let idx = nextWordIndex(for: current) else { return nil }
+        return viewModel.words[idx]
     }
 
     private func startAutoPlay() {
