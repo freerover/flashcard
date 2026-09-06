@@ -37,10 +37,13 @@ struct ContentView: View {
                         } label: {
                             Image(systemName: autoPlayActive ? "pause.fill" : "play.fill")
                                 .font(.title3)
-                                .foregroundColor(.blue)
-                                .frame(maxWidth: .infinity)
+                                .foregroundColor(.white)
+                                .frame(width: 56, height: 56)
+                                .background(Circle().fill(Color.blue))
                         }
-                        .buttonStyle(.bordered)
+                        .buttonStyle(.plain)
+                        .frame(maxWidth: .infinity)
+                        .padding(.top, 8)
                     }
                     .padding()
                 }
